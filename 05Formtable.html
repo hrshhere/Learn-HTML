@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    
+    <h2><u>Form</u></h2>
+    <p>The <strong>form</strong> element contains the entire form.</p>
+
+    <h4><u>Action</u></h4>
+    <p>The <strong>action </strong>attribute specifies where the form data will be sent upon submission (usually a
+        server-side script that processes the data).</p>
+
+    <h4><u>Method</u></h4>
+    <p>The <strong>method </strong>attribute specifies the HTTP method to be used when submitting the form, often "post"
+        for secure data transmission.</p>
+
+    <h4><u>Label</u></h4>
+    <p><strong>Labels</strong> are used to describe each form control, enhancing accessibility.</p>
+
+    <h4><u>Input</u></h4>
+    <p>Form controls like text inputs <strong>Input</strong>, email inputs, and text areas textarea are provided for
+        user input.</p>
+
+    <h4><u>Required</u></h4>
+    <p>The <strong> Required </strong>attribute on form controls ensures that the user must fill in the corresponding
+        field before submission.</p>
+
+    <h4><u>Submit</u></h4>
+    <p>The <strong>submit</strong> button (input type="submit") triggers the form submission.</p>
+
+     <h1>Contact Information</h1> 
+
+     <form action="process-form.php" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+
+        <label>Languages:</label>
+        <input type="checkbox" id="english" name="languages[]" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="spanish" name="languages[]" value="spanish">
+        <label for="spanish">Spanish</label>
+        <input type="checkbox" id="french" name="languages[]" value="french">
+        <label for="french">French</label>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <form action="">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <br>
+
+        <label>Gender :</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="male">Female</label>
+        <input type="radio" name="gender" id="other" value="other" required>
+        <label for="male">Other</label>
+        <br>
+
+        <label> Language :</label>
+        <input type="checkbox" name="language" id="english" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" name="language" id="hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" name="language" id="spanish">
+        <label for="spanish">Spanish</label>
+        <br>
+
+        <label for="Country">Country :</label>
+        <select name="Country" id="Country">
+            <option value="Ind">India</option>
+            <option value="Pak">Pakistan</option>
+            <option value="Cha">Chaina</option>
+            <option value="Jap">Japan</option>
+        </select>
+        <br>
+
+        <label for="Comments">Comments :</label>
+        <textarea name="Comments" id="Comments" cols="50" rows="4"></textarea>
+        <br>
+
+        <input type="submit">
+        
+    </form>
+<!--
+
+<table>
+    <caption>Sample</caption>
+    <th>
+        <tr>
+            <th>Header 0</th>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+    </th>
+    <tb>
+        <tr>
+            <td>Row 0 , Column 0</td>
+            <td>Row 0 , Column 1</td>
+            <td>Row 0 , Column 2</td>
+            <td>Row 0 , Column 3</td>
+        </tr>           
+                  
+        <tr>
+            <td>Row 1 , Column 0</td>
+            <td>Row 1 , Column 1</td>
+            <td>Row 1 , Column 2</td>
+            <td>Row 1 , Column 3</td>
+        </tr>           
+    </tb>
+    <tfoot>
+        <tr>
+            <td colspan="3">Footer content</td>
+        </tr>
+    </tfoot>
+</table>
+<a href="#" tabindex="0">Clickable Link</a>
+
+
+</body>
+
+</html>-->
